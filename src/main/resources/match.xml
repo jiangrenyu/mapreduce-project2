@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+  <name>pro</name>
+  <value>836</value>
+  <description>省份ID</description>
+</property>
+<property>
+  <name>prefix</name>
+  <value>LDAPD_IAAA_INFO</value>
+  <description>文件名前缀</description>
+</property>
+<property>
+  <name>size</name>
+  <value>2048</value>
+  <description>压缩文件的大小</description>
+</property>
+<property>
+  <name>retransmission</name>
+  <value>00</value>
+  <description>重传次数  00表示初次正常上传；01表示第1次重传</description>
+</property>
+<property>
+  <name>batch</name>
+  <value>001</value>
+  <description>文件批次</description>
+</property>
+<property>
+  <name>sequence_length</name>
+  <value>3</value>
+  <description>文件批次</description>
+</property>
+
+</configuration>

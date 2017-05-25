@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+    <property>
+        <name>filePrefix</name>
+        <value>BDAP_I3GDPI_INFO</value>
+        <description>文件前缀</description>
+    </property>
+    <property>
+        <name>fileSuffix</name>
+        <value></value>
+        <description>文件后缀</description>
+    </property>
+    <property>
+        <name>rollSize</name>
+        <value>1073741824</value>
+        <description>文件回滚大小</description>
+    </property>
+    <property>
+        <name>rollCount</name>
+        <value></value>
+        <description>文件回滚记录；如果同时设置rollSize，取rollSize</description>
+    </property>
+    <property>
+        <name>distributeDate</name>
+        <value>yyyyMMdd</value>
+        <description>下发时间格式</description>
+    </property>
+    <property>
+        <name>dataDate</name>
+        <value>yyyyMMdd</value>
+        <description>文件数据时间</description>
+    </property>
+    <property>
+        <name>tryNumLong</name>
+        <value>2</value>
+        <description>重传次数位宽</description>
+    </property>
+    <property>
+        <name>dataDate</name>
+        <value>3</value>
+        <description>批次流水号位宽</description>
+    </property>
+
+</configuration>

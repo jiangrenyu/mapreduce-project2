@@ -1,0 +1,37 @@
+Container killed by the ApplicationMaster.
+Container killed on request. Exit code is 143
+Container exited with a non-zero exit code 143
+
+16/02/19 11:02:24 INFO mapreduce.Job: Task Id : attempt_1446803153100_20809_m_000019_0, Status : FAILED
+Error: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.LeaseExpiredException): No lease on /data/hjpt/edm/ilpf/_temporary/1/_temporary/attempt_1446803153100_20809_m_000019_0/error_new/itf_3gdpi_mbl/beijing/20160214/17/error-m-00019.gz (inode 603256451): File does not exist. Holder DFSClient_attempt_1446803153100_20809_m_000019_0_-1801061049_1 does not have any open files.
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkLease(FSNamesystem.java:3605)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState(FSNamesystem.java:3402)
+        at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3258)
+        at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:668)
+        at org.apache.hadoop.hdfs.server.namenode.AuthorizationProviderProxyClientProtocol.addBlock(AuthorizationProviderProxyClientProtocol.java:212)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:483)
+        at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1060)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2044)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2040)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:415)
+        at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1671)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2038)
+
+        at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+        at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+        at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:232)
+        at com.sun.proxy.$Proxy12.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.addBlock(ClientNamenodeProtocolTranslatorPB.java:399)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+        at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+        at com.sun.proxy.$Proxy13.addBlock(Unknown Source)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1544)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1361)
+        at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:600)
